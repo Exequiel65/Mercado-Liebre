@@ -1,0 +1,8 @@
+:root{
+    --amarillo: #EAC926;
+}
+
+
+body{
+    background-color: var(--amarillo);
+}
