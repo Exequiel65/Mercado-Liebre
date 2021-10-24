@@ -1,0 +1,36 @@
+/* START FOOTER */
+footer{
+    padding-top: 40px;
+}
+
+footer article{
+    margin-bottom: 40px;
+}
+
+
+footer .footer-article{
+    text-align: center;
+
+}
+
+footer .footer-article i{
+    color: var(--light_blue);
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+footer .footer-article h5{
+    font-size: var(--discounts-descriptions);
+}
+
+footer .footer-article p{
+    font-size: var(--paragraph);
+    width: 77%;
+    margin: 0 auto;
+}
+
+footer .copy{
+    color: var(--dark-grey);
+    font-size: var(--paragraph);
+    margin: 0 0 10px 15px;
+}

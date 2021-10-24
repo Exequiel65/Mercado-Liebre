@@ -1,8 +1,12 @@
-:root{
-    --amarillo: #EAC926;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-body{
-    background-color: var(--amarillo);
-}
+@import url('variables.css');
+@import url('general.css');
+@import url('header.css');
+@import url('footer.css');
+@import url('home.css');
+
+
+
+

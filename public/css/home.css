@@ -1,0 +1,116 @@
+/* banner */
+.home .banner {
+    display: none;
+}
+
+/* main */
+
+main.home{
+    margin: 0 auto;
+    width: 90%;
+ 
+}
+
+/* Section */
+
+
+.home .section-title{
+    margin: 25px 0;
+   
+}
+
+.home .card{
+    background-color: white;
+    margin-bottom: 10px;  
+}
+
+.home .card .card-content{
+    border-top: 1px solid var(--light-grey);
+    padding: 15px;
+    display: none;
+    position: relative;
+}
+
+
+.home .card .card-content .product-info .ofert{
+    color: var(--green);
+
+}
+main section article i {
+    color: var(--green);
+    display: block;
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px ;
+    top: -15px ;
+    }
+
+/* media query */
+/* desktop */
+
+@media (min-width: 361px){
+    .home section .card-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    
+    .home article.card{
+        display: flex;
+        max-width: 40vw;
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        flex-wrap: wrap;
+    }
+
+    .home .section-title{
+        display: block;
+    }
+
+    
+
+    .home .card .card-content{
+       display: block;
+       width: 100%;
+    }
+    .home .card .card-content .product-info{
+        display: flex;
+    }
+    .home .card .card-content .product-info .ofert{
+        color: var(--green);
+        flex-grow: 0.70;
+    }
+    .home .card .card-content .product-info .precio{
+        flex-grow: 0.30;
+    }
+
+   
+    
+
+}
+
+
+
+@media (min-width: 769px){
+    .home article.card{
+        max-width: 20vw;
+    }
+}
+
+
+
+
+/* @media (min-width: 992px){
+    .home .banner {
+        display: block;
+
+    }
+} */
+
