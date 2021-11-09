@@ -23,6 +23,7 @@ header .head {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 header .logo{
@@ -39,13 +40,11 @@ header .search-bar{
     display: flex;
 }
 
-
 /* Cuotas */
 
 header .quota{
     text-align: center;
     margin: 10px 0 20px;
-
 
 }
 
