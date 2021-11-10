@@ -1,0 +1,23 @@
+main.login{
+    margin: 30px auto 0;
+
+}
+
+
+main.login .button{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+main.login .button button{
+    width: 40%;
+    border-radius: 5px;
+}
+
+
+main.login .button button:hover{
+    background-color: #0022AA;
+}

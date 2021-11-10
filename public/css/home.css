@@ -21,21 +21,34 @@ main.home{
 
 .home .card{
     background-color: white;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
+    
 }
 
 .home .card .card-content{
     border-top: 1px solid var(--light-grey);
     padding: 15px;
-    display: none;
+    display: block;
     position: relative;
-}
 
+}
 
 .home .card .card-content .product-info .ofert{
     color: var(--green);
-
 }
+
+.home .card .card-content .product-info p{
+    display: none;
+    transition: all 2s;
+  
+}
+.home .card:hover .card-content .product-info p{
+    display: block;
+}
+.home .card:hover .card-content i{
+    transform: rotate(-90deg);
+}
+
 main section article i {
     color: var(--green);
     display: block;
@@ -49,6 +62,7 @@ main section article i {
     position: absolute;
     right: 20px ;
     top: -15px ;
+    transition: transform 2s;
     }
 
 /* media query */
@@ -81,6 +95,10 @@ main section article i {
        width: 100%;
     }
     .home .card .card-content .product-info{
+        display: none;
+        transition: all 2s;
+    }
+    .home .card:hover .card-content .product-info{
         display: flex;
     }
     .home .card .card-content .product-info .ofert{

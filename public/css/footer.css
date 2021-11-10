@@ -34,3 +34,13 @@ footer .copy{
     font-size: var(--paragraph);
     margin: 0 0 10px 15px;
 }
+
+
+@media (min-width: 769px){
+    footer .footer-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

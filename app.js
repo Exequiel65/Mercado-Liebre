@@ -16,6 +16,13 @@ app.get("/", (req,res)=> {
     // res.end()
 });
 
+app.get("/register", (req,res)=> {
+    res.sendFile(path.join(__dirname, "/views/register.html"))
+});
+
+app.get("/login", (req,res)=> {
+    res.sendFile(path.join(__dirname, "/views/login.html"))
+});
 
 // Server
 app.listen(PORT, () => console.log(` 

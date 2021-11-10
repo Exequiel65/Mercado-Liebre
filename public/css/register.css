@@ -1,0 +1,93 @@
+main.register{
+    margin: 0 auto;
+    width: 90%;
+ 
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input-container{
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.input-container label{
+    display: block;
+    width: 100%;
+    text-align: left;
+
+}
+
+.input-container input[type=text], .input-container input[type=number], .input-container input[type=date], .input-container input[type=password]{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.input-container .radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.input-container .check{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+    
+}
+
+.input-container .check .check-contant{
+    padding: 3px;
+}
+.input-container .radio label , .input-container .check label {
+    display: inline;
+    padding-left: 10px;
+    
+}
+
+
+.input-container input[type=file]{
+    margin-top: 6px;
+}
+
+
+button{
+
+    border: none;
+    outline: none;
+    
+}
+
+.button button{    
+    padding: 10px;
+    background-color: rgb(59, 135, 235);
+    width: 100px;
+    border-radius: 20px;
+}
+
+.button button:active{
+    transform: translateY(1px);
+}
+
+
+@media (min-width: 361px){
+    .input-container input[type=text], .input-container input[type=number], .input-container input[type=date], .input-container input[type=password]{
+        height: 40px;
+    }
+}
