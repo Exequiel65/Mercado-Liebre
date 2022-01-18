@@ -1,6 +1,8 @@
 /* START FOOTER */
 footer{
+    margin: 20px;
     padding-top: 40px;
+    border-top: 1px solid rgb(124, 124, 124);
 }
 
 footer article{

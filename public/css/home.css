@@ -10,7 +10,9 @@ main.home{
     width: 90%;
  
 }
-
+.product-name{
+    display: none;
+}
 /* Section */
 
 
@@ -32,17 +34,23 @@ main.home{
     position: relative;
 
 }
+.search-bar form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
 
+}
 .home .card .card-content .product-info .ofert{
     color: var(--green);
 }
 
 .home .card .card-content .product-info p{
     display: none;
-    transition: all 2s;
+    transition: all 1s;
   
 }
-.home .card:hover .card-content .product-info p{
+.home .card:hover .card-content .product-info p, .card:hover .product-name{
     display: block;
 }
 .home .card:hover .card-content i{

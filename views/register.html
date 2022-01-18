@@ -13,12 +13,15 @@
         <div class="head">
             
             <div class="logo">
-                <img src="images/logo-mercado-liebre.svg" alt="Logo de logo mercado liebre">
+                <a href="/"><img src="images/logo-mercado-liebre.svg" alt="Logo de logo mercado liebre"></a>
             </div>
 
             <div class="search-bar">
-                <input type="text" placeholder="Buscar productos, marcas"> 
-                <button type="submit"><i class="fas fa-search"></i></button>
+                <form action="">
+                    <input type="text" placeholder="Buscar productos, marcas"> 
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                
             </div>
 
 
@@ -56,28 +59,28 @@
            
                 <div class="input-container">
                     <label for="name">Nombre y Apellido</label>
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" name="name" required>
                 </div>
 
             
                 <div class="input-container">
                     <label for="name_user">Nombre de usuario</label>
-                    <input type="text" id="name_user" required>
+                    <input type="text" id="name_user" name="name_user" required>
                 </div>
                 
                 <div class="input-container">
                     <label for="date">Fecha de nacimiento</label>
-                    <input type="date" id="date" required>
+                    <input type="date" id="date" name="date_birth" required>
                 </div>
 
                 <div class="input-container">
                     <label for="domi">Domicilio</label>
-                    <input type="text" id="domi" required>
+                    <input type="text" id="domi" name="adress" required>
                 </div>
                 
                 <div class="input-container">
                     <label for="domi_n">N°</label>
-                    <input type="number" id="domi_n" required>
+                    <input type="number" id="domi_n" name="adress_number" required>
                 </div>
                 
                 <div class="input-container ">
@@ -93,23 +96,23 @@
                     <p>Categoria de interes</p>
                     <div class="check">
                         <div class="check-contant">
-                            <input type="checkbox" id="elec"><label for="elec">Electro</label>
+                            <input type="checkbox" id="elec" name="category" ><label for="elec">Electro</label>
                         </div>
                         
                         <div class="check-contant">
-                            <input type="checkbox" id="moda"><label for="moda">Moda</label>
+                            <input type="checkbox" id="moda" name="category" ><label for="moda">Moda</label>
                         </div>
                         
                         <div class="check-contant">
-                            <input type="checkbox" id="hogar"><label for="hogar"> Hogar</label>
+                            <input type="checkbox" id="hogar" name="category" ><label for="hogar"> Hogar</label>
                         </div class="check-cotant">
                         
                         <div class="check-contant">
-                            <input type="checkbox" id="toys"><label for="toys">Juguetes</label>
+                            <input type="checkbox" id="toys" name="category" ><label for="toys">Juguetes</label>
                         </div>
                         
                         <div class="check-contant">
-                            <input type="checkbox" id="vida"><label for="vida">Vida sana</label>
+                            <input type="checkbox" id="vida" name="category" ><label for="vida">Vida sana</label>
                         </div>
                            
                     </div>
@@ -118,17 +121,17 @@
 
                 <div class="input-container">
                     <label for="pic">Foto de usuario</label>
-                    <input type="file" id="pic" accept=".jpg, .png, .jpe">
+                    <input type="file" id="pic" accept=".jpg, .png, .jpe" name="photo_user">
                 </div>
 
                 <div class="input-container">
                     <label for="pass">Contraseña</label>
-                    <input type="password" id="pass" required>
+                    <input type="password" id="pass" name="pass" required>
                 </div>
                 
                 <div class="input-container">
                     <label for="repass">Confrimar Contraseña</label>
-                    <input type="password" id="repass" required>
+                    <input type="password" id="repass" name="pass2" required>
                 </div>
 
 
@@ -142,23 +145,26 @@
         </div>
     </main>
     <footer>
-        <article class="footer-article">
-            <i class="fas fa-credit-card"></i>
-            <h5>Pagá con tarjeta o en efectivo</h5>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-        </article>
-        <article class="footer-article">
-            <i class="fas fa-gift"></i>
-            <h5>Envío gratis desde $ 2.500</h5>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
-                Mercado Puntos.
-            </p>
-        </article>
-        <article class="footer-article">
-            <i class="fas fa-user-shield"></i>
-            <h5>Seguridad, de principio a fin</h5>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
-        </article>
+        <div class="footer-container">
+            <article class="footer-article">
+                <i class="fas fa-credit-card"></i>
+                <h5>Pagá con tarjeta o en efectivo</h5>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+            <article class="footer-article">
+                <i class="fas fa-gift"></i>
+                <h5>Envío gratis desde $ 2.500</h5>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+                    Mercado Puntos.
+                </p>
+            </article>
+            <article class="footer-article">
+                <i class="fas fa-user-shield"></i>
+                <h5>Seguridad, de principio a fin</h5>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </article>
+        </div>
+        
         <article class="copy">
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </article>

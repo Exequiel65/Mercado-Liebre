@@ -4,20 +4,27 @@ main.login{
 }
 
 
-main.login .button{
+main.login .button-login{
     width: 100%;
     max-width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    text-align: center;
 }
-main.login .button button{
+main.login .button-login a{
     width: 40%;
     border-radius: 5px;
+    padding: 10px 0;
+    color: white;
+    background-color: rgb(59, 135, 235);
 }
 
 
-main.login .button button:hover{
+main.login .button-login a:hover{
     background-color: #0022AA;
 }
+
+
+
